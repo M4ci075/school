@@ -1,0 +1,18 @@
+
+body {
+    background-color: #fa9830;
+    padding: 50px;
+    font-size: 165%;
+    font-family: Arial;
+}
+a:hover {
+    color:yellow;
+    text-decoration: underline;
+}
+ul {
+    font-size: 120%;
+}
+section {
+    margin: 20px;
+    font-size: 130%;
+}
