@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Znacznikiem &lt;progress&gt; i &lt;meter&gt;</title>
+    <meta name="copyright" content="Maciek Stachowiak" />
+<style>
+    body {
+        font-family: 'Palatino Linotype', serif;
+    }
+
+    h1 {
+        font-size: x-large;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    P {
+        margin: 2px
+    }
+
+    .separatedSection {
+        margin-top:20px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Paski postępu</h1>
+Postęp: <progress max=100 value=50>50%</progress><br>
+Postęp: <progress>Wykonywanie zadania w toku... </progress>
+
+<h1>Wskaźniki</h1>
+Twoja walizka waży: <meter min="2" max="20" value="16">13 kilogramów</meter><br>
+Twoja walizka waży: <meter min="2" max="20" low="4" high="15" value="16">16
+kilogramów</meter>*
+<p><small>* Bagaże cięższe niż 15 kilogramów podlegają dodatkowej opłacie.</small></p>
+
+<hr>
+
+Zjadłeś: <meter min="0" max="2800" value="2100">1600 kcal</meter><br>
+Zjadłeś: <meter min="0" max="2800" low="4" high="15" value="2100">2100 kcal</meter>*
+<p><small>Twoje dzienne zapotrzebowanie kalorii wynosi: 2800 kcal.</small></p>
+
+<div class="separatedSection">
+    <p>Naszym celem jest zebranie 50 000 dolarów na rzecz fundacji FRL (Fundacja Ratowania
+        Lemingów).</p>
+    <p>Do tej pory zebraliśmy 14 000 dolarów. <meter max="50000" value="14000"></meter></p>
+
+    <hr>
+
+    <p>Zjedzone kalorie:</p>
+    <p>Do tej pory zjadłeś 600 kcal. <meter max="4000" value="600"></meter></p>
+
+
+</div>
+</body>
+</html>

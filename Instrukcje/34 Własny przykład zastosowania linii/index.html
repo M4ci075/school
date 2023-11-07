@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Konstrukcja</title>
+    <meta name="copyright" content="Maciek Stachowiak" />
+
+    <style>
+        canvas {
+            border: 1px dashed black;
+        }
+    </style>
+
+    <script>
+
+        window.onload = function() {
+            var canvas = document.getElementById("drawingCanvas");
+            var context = canvas.getContext("2d");
+
+
+            context.lineWidth = 20;
+            context.strokeStyle = "rgb(22,180,180)";
+
+            context.moveTo(500,290);
+            context.lineTo(120,290);
+            context.lineCap = "butt";
+            context.stroke();
+
+            context.lineWidth = 100;
+            context.strokeStyle ="rgb(255,180,0)"
+
+            context.beginPath();
+            context.moveTo(240,290);
+            context.lineTo(190,540);
+            context.lineCap = "butt";
+            context.stroke();
+
+            context.lineWidth = 3;
+            context.strokeStyle = "rgb(51,180,22)"
+            context.beginPath();
+            context.moveTo(400,290);
+            context.lineTo(400,540);
+            context.lineCap = "butt";
+            context.stroke();
+
+            context.lineWidth = 250;
+            context.strokeStyle = "rgb(255,189,255)"
+
+            context.beginPath();
+            context.moveTo(550,320);
+            context.lineTo(400,290);
+            context.lineCap = "butt";
+            context.stroke();
+        };
+
+    </script>
+</head>
+
+<body>
+<canvas id="drawingCanvas" width="700" height="600"></canvas>
+</body>
+</html>

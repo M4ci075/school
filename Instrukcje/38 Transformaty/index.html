@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Transformaty</title>
+    <meta name="copyright" content="Maciek Stachowiak" />
+
+    <style>
+        canvas {
+            border: 1px dashed black;
+        }
+    </style>
+
+    <script>
+
+        window.onload = function () {
+            var canvas = document.getElementById("drawingCanvas");
+            var context = canvas.getContext("2d");
+
+            context.rect(10, 10, 120, 80);
+
+            context.fillStyle = "yellow" + "green";
+            context.fillRect(10, 10, 120,80);
+
+            context.translate(80, 50);
+            context.rect(80, 10 , 120, 80);
+
+            context.fillStyle = "rgb(707, 40, 204)";
+            context.fillRect(80,10,75,80);
+
+            context.fillStyle = "rgb(255,122,139)"
+            context.fillRect(155, 10, 45, 80)
+
+            context.translate(70, 50);
+            context.rect(160, 10 , 120, 80);
+
+            context.fillStyle = "rgb(205,349,993)";
+            context.fillRect(160,10,120,80);
+
+
+
+            context.stroke();
+
+        }
+    </script>
+</head>
+
+<body>
+<canvas id="drawingCanvas" width="500" height="300"></canvas>
+</body>
+</html>

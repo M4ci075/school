@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Linie</title>
+    <meta name="copyright" content="Maciek Stachowiak" />
+
+    <style>
+        canvas {
+            border: 1px dashed black;
+        }
+    </style>
+
+    <script>
+
+        window.onload = function() {
+            var canvas = document.getElementById("drawingCanvas");
+            var context = canvas.getContext("2d");
+
+
+            context.lineWidth = 20;
+            context.strokeStyle = "rgb(205,40,40)";
+
+            context.moveTo(10,10);
+            context.lineTo(10,290);
+            context.lineCap = "butt";
+            context.stroke();
+
+            context.strokeStyle ="rgb(400,320,80)"
+
+            context.beginPath();
+            context.moveTo(200,10);
+            context.lineTo(200,290);
+            context.lineCap = "round";
+            context.stroke();
+
+            context.strokeStyle = "rgb(100,20,90)"
+            context.beginPath();
+            context.moveTo(400,10);
+            context.lineTo(400,290);
+            context.lineCap = "square";
+            context.stroke();
+        };
+
+    </script>
+</head>
+
+<body>
+<canvas id="drawingCanvas" width="500" height="300"></canvas>
+</body>
+</html>

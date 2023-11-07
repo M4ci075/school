@@ -1,0 +1,30 @@
+* {
+    background-color: wheat;
+    color: black;
+    font-family: Calibri;
+}
+header {
+    margin: 30px;
+    font-size: 120%;
+}
+ li {
+     color: black;
+     display: inline-list-item;
+     margin-bottom: 5px;
+
+}
+ fieldset {
+     width: 500px;
+     margin: 20px;
+     border: 2px solid;
+     color: #777676;
+ }
+ section {
+     width: 500px;
+ }
+ section h2 {
+     margin-left: 125px;
+ }
+ ol, ul {
+     list-style-type: none;
+ }

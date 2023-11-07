@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Trójkąt</title>
+    <meta name="copyright" content="Maciek Stachowiak" />
+
+    <style>
+        canvas {
+            border: 1px dashed black;
+        }
+    </style>
+
+    <script>
+
+        window.onload = function() {
+            var canvas = document.getElementById("drawingCanvas");
+            var context = canvas.getContext("2d");
+
+            context.fillStyle = "yellow";
+            context.fillRect(0,1,500,300);
+
+            context.moveTo(250,250);
+            context.lineTo(50,50);
+            context.lineTo(450,50);
+            context.closePath();
+
+            context.fillStyle = "#FEBAAD";
+            context.fill();
+
+            context.lineWidth = 10;
+            context.strokeStyle = "aqua";
+            context.stroke();
+
+        };
+    </script>
+</head>
+
+<body>
+<canvas id="drawingCanvas" width="500" height="300"></canvas>
+</body>
+</html>
