@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kreator prezentów</title>
+    <meta name="description" content="Tu zaprojektujesz swój wymarzony prezent!"/>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+<p><b>Jeśli dalej nie wiesz jaki prezent będzie idealny, nie przejmuj się! Na tej stronie pomożemy ci wybrać najlepszy prezent dla ciebie lub bliskich!</b>.</p>
+<hr color="navy">
+
+<form action="contest.php" method="post">
+
+    <section>
+        <fieldset>
+            <legend><b>Podstawowe dane</b></legend>
+
+            <ul>
+                <li><label for="form-name">Imię i nazwisko:</label> <input type="text" name="username" id="form-name"></li>
+                <li>Płeć:
+                    <input type="radio" value="kobieta" name="plec">Kobieta
+                    <input type="radio" value="mężczyzna" name="plec">Mężczyzna
+                </li>
+                <li><label for="form-email">E-mail:</label> <input type="email" name="emailadress" id="form-email"></li>
+                <li><label for="form-tel">Telephone:</label> <input type="tel" name="telephone" id="form-tel"></li>
+                <li><label for="form-story">Dalej nie wiem CZEGO potrzebuję ...</label><br />
+                    <textarea name="story" rows="4" cols="60" maxlength="300" id="form-story" placeholder="Nie więcej niż 300 znaków!"></textarea></li>
+            </ul>
+        </fieldset>
+    </section>
+
+
+
+<section><h2>Zaprojektuj wymażony prezent:</h2></section>
+
+    <fieldset><legend><b>Wymażony prezent</b></legend>
+
+        <section>
+            <fieldset>
+                <legend>Rodzaj zabawki <em>Wybierz jeden)</em>:</legend>
+                <ul>
+                    <li><label><input type="radio" name="toy" value="Teddy bear"> Pluszowy miś</label></li>
+                    <li><label><input type="radio" name="toy" value="Doll"> Lalka</label></li>
+                    <li><label><input type="radio" name="toy" value="Car"> Auta</label></li>
+                    <li><label><input type="radio" name="toy" value="Lego"> Lego</label></li>
+                    <li><label><input type="radio" name="toy" value="Board games">Gry planszowe <select name="board games" size="1">
+                        <option name="cheese">Szachy</option>
+                        <option name="cheese">Szachy</option>
+                        <option name="cheese">Szachy</option>
+                        <option name="cheese">Szachy</option>
+                        <option name="cheese">Szachy</option>
+                        <option name="cheese">Szachy</option>
+                        <option name="cheese">Szachy</option>
+                    </select></label></li>
+                </ul>
+
+            </fieldset>
+        </section>
+    </fieldset>
+
+
+
+</form>
+
+</body>
+</html>
