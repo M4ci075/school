@@ -4,65 +4,155 @@
     <meta charset="UTF-8">
     <title>Kreator prezentów</title>
     <meta name="description" content="Tu zaprojektujesz swój wymarzony prezent!"/>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylea.css">
 </head>
 
 <body>
-<p><b>Jeśli dalej nie wiesz jaki prezent będzie idealny, nie przejmuj się! Na tej stronie pomożemy ci wybrać najlepszy prezent dla ciebie lub bliskich!</b>.</p>
-<hr color="navy">
 
-<form action="contest.php" method="post">
+<div id="container">
 
-    <section>
-        <fieldset>
-            <legend><b>Podstawowe dane</b></legend>
+    <div id="header">
+    <h1>Kreator prezentów - z nami jesteś bezpieczny!</h1>
+    <p><b>Jeśli dalej nie wiesz jaki prezent będzie idealny, nie przejmuj się! Na tej stronie pomożemy ci wybrać najlepszy prezent dla ciebie lub bliskich!</b>.</p>
+    </div>
 
-            <ul>
-                <li><label for="form-name">Imię i nazwisko:</label> <input type="text" name="username" id="form-name"></li>
-                <li>Płeć:
-                    <input type="radio" value="kobieta" name="plec">Kobieta
-                    <input type="radio" value="mężczyzna" name="plec">Mężczyzna
-                </li>
-                <li><label for="form-email">E-mail:</label> <input type="email" name="emailadress" id="form-email"></li>
-                <li><label for="form-tel">Telephone:</label> <input type="tel" name="telephone" id="form-tel"></li>
-                <li><label for="form-story">Dalej nie wiem CZEGO potrzebuję ...</label><br />
-                    <textarea name="story" rows="4" cols="60" maxlength="300" id="form-story" placeholder="Nie więcej niż 300 znaków!"></textarea></li>
-            </ul>
-        </fieldset>
-    </section>
+    <hr color="navy">
 
-
-
-<section><h2>Zaprojektuj wymażony prezent:</h2></section>
-
-    <fieldset><legend><b>Wymażony prezent</b></legend>
+    <div id="content">
+    <form action="contest.php" method="post">
 
         <section>
             <fieldset>
-                <legend>Rodzaj zabawki <em>Wybierz jeden)</em>:</legend>
-                <ul>
-                    <li><label><input type="radio" name="toy" value="Teddy bear"> Pluszowy miś</label></li>
-                    <li><label><input type="radio" name="toy" value="Doll"> Lalka</label></li>
-                    <li><label><input type="radio" name="toy" value="Car"> Auta</label></li>
-                    <li><label><input type="radio" name="toy" value="Lego"> Lego</label></li>
-                    <li><label><input type="radio" name="toy" value="Board games">Gry planszowe <select name="board games" size="1">
-                        <option name="cheese">Szachy</option>
-                        <option name="cheese">Szachy</option>
-                        <option name="cheese">Szachy</option>
-                        <option name="cheese">Szachy</option>
-                        <option name="cheese">Szachy</option>
-                        <option name="cheese">Szachy</option>
-                        <option name="cheese">Szachy</option>
-                    </select></label></li>
-                </ul>
+                <legend><b>Podstawowe dane</b></legend>
 
+                <ul>
+                    <li><label for="form-name">Imię i nazwisko:</label> <input type="text" name="username" id="form-name"></li>
+                    <li>Płeć:
+                        <input type="radio" value="kobieta" name="plec">Kobieta
+                        <input type="radio" value="mężczyzna" name="plec">Mężczyzna
+                    </li>
+                    <li><label for="form-email">E-mail:</label> <input type="email" name="emailadress" id="form-email"></li>
+                    <li><label for="form-tel">Telephone:</label> <input type="tel" name="telephone" id="form-tel"></li>
+                    <li><label for="form-story">Dalej nie wiem CZEGO potrzebuję ...</label><br />
+                        <textarea name="story" rows="4" cols="60" maxlength="300" id="form-story" placeholder="Nie więcej niż 300 znaków!"></textarea></li>
+                </ul>
             </fieldset>
         </section>
-    </fieldset>
 
 
 
-</form>
+    <section><h2>Zaprojektuj wymażony prezent:</h2></section>
+
+        <fieldset><legend><b>Wymażony prezent</b></legend>
+
+            <section>
+                <fieldset>
+                        <legend>Rodzaj zabawki <em>Wybierz jeden)</em>:</legend>
+                        <ul>
+                            <li><label><input type="radio" name="toy" value="Teddy bear"> Pluszaki</label></li>
+                            <li><label><input type="radio" name="toy" value="Doll"> Lalki</label></li>
+                            <li><label><input type="radio" name="toy" value="Car"> Auta</label></li>
+                            <li><label><input type="radio" name="toy" value="Lego"> Lego</label></li>
+                            <li><label><input type="radio" name="toy" value="Board games"> Gry planszowe <select name="board games" size="1">
+                                <option name="chess">Szachy</option>
+                                <option name="ludo">Chińczyk</option>
+                                <option name="draughts">Warcaby</option>
+                                <option name="Rummikub">Rummikub</option>
+                                <option name="Uno">Uno</option>
+                                <option name="Monopoly">Monopoly</option>
+                                <option name="dominoes">Domino</option>
+                            </select></label></li>
+                            <li><label><input type="radio" name="toy" value="console"> Konsole <select name="console" size="1">
+                                <optgroup label="Nintendo Switch">
+                                    <option name="oled"> OLED</option>
+                                    <option name="normal"> Normal</option>
+                                    <option name="lite"> Lite</option>
+                                </optgroup>
+                                <optgroup label="Playstation">
+                                    <option name="PS5"> PS5</option>
+                                    <option name="PS4"> PS4</option>
+                                    <option name="PS3"> PS3</option>
+                                    <option name="PS2"> PS2</option>
+                                </optgroup>
+                                <optgroup label="X-box">
+                                    <option name="X-box one S"> Xbox one S</option>
+                                    <option name="X-box one X"> Xbox one X</option>
+                                    <option name="X-box 360"> Xbox 360</option>
+                                </optgroup>
+                            </select></label></li>
+                        </ul>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Materiał <em>(wybierz w zależności od typu zabawki)</em>:</legend>
+                    <ul>
+                        <li><label><input type="radio" name="material" value="metal"> metal</label></li>
+                        <li><label><input type="radio" name="material" value="metal"> metal</label></li>
+                        <li><label><input type="radio" name="material" value="metal"> metal</label></li>
+                        <li><label><input type="radio" name="material" value="metal"> metal</label></li>
+                    </ul>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend><em>*</em>Kolor zabawki <em>(max 2)</em>:</legend><br />
+                    <ul>
+                        <li><label><input type="checkbox" name="basic colors" value="white"> biały</label></li>
+                        <li><label><input type="checkbox" name="basic colors" value="black"> czarny</label></li>
+                        <li><label><input type="checkbox" name="basic colors" value="red"> czerwony</label></li>
+                        <li><label><input type="checkbox" name="basic colors" value="green"> zielony</label></li>
+                        <li><label><input type="checkbox" name="basic colors" value="blue"> niebieski</label></li>
+                    </ul>
+                    <legend>Inne kolory:</legend>
+                    <ul>
+                        <li><label><input type="checkbox"> <input type="color" name="others"> (<i>1 kolor</i>)</label></li>
+                        <br />
+                        <li><label><input type="checkbox"> <input type="color" name="others"> (<i>2 kolor</i>)</label></li>
+                    </ul>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Dodatki <em>(bez limitu w końcu są święta)</em></legend>
+                    <ul>
+                        <li><label><input type="checkbox" name="features[]" value="mp3"> Odtwarzanie MP3
+                            <select name="języki" size="1">
+                                <optgroup label="Języki słowiańskie">
+                                    <option selected="selected" value="polski">polski</option>
+                                    <option value="rosyjski">rosyjski</option>
+                                    <option value="ukraiński">ukraiński</option>
+                                </optgroup>
+                                <optgroup label="Języki germańskie">
+                                    <option value="angielski">angielski</option>
+                                    <option value="niemiecki">niemiecki</option>
+                                </optgroup>
+                                <optgroup label="Języki romańskie">
+                                    <option value="francuski">francuski</option>
+                                    <option value="włoski">włoski</option>
+                                    <option value="hiszpański">hiszpański</option>
+                                </optgroup>
+                                <input type="checkbox" name="język"> Inne (podaj jakie):
+                        </select></label>
+
+                        </li>
+                        <li><label><input type="checkbox" name="features[]" value="christmas logo" checked> Świąteczne logo</label></li>
+                        <li><label><input type="checkbox" name="features[]" value="clothes"> Ubrania <em>(*dla misi i lalek)</em></label></li>
+                        <li><label><input type="checkbox" name="features[]" value="jewellery"> Biżuteria</label></li>
+                        <li><label><input type="checkbox" name="features[]" value="">bonus <em>(Mistery)</em></label></li>
+                    </ul>
+                </fieldset>
+            </section>
+            <p>
+                <input type="submit" value="Wyślij" name="wyslij">
+                <input type="reset" value="Wyczyść" name="zeruj">
+            </p>
+        </fieldset>
+
+    </form>
+
+    </div>
+</div>
 
 </body>
 </html>
