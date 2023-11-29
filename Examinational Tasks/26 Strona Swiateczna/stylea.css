@@ -1,0 +1,46 @@
+body {
+    background-color: forestgreen;
+    color: snow;
+    font-family: Calibri;
+}
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1900px;
+}
+#content {
+    width: 500px;
+    float: left;
+}
+#header {
+    text-align: center;
+    margin: 30px;
+    font-size: 120%;
+}
+li {
+    color: black;
+    display: inline-list-item;
+    margin-bottom: 5px;
+
+}
+fieldset {
+    background-color: whitesmoke;
+    width: 700px;
+    margin: 20px;
+    border: 3px solid;
+    color: black;
+    font-size: 120%;
+}
+section {
+    width: 500px;
+}
+section h2 {
+
+}
+ol, ul {
+    list-style-type: none;
+}
+.title {
+    margin-left: 220px;
+}
+

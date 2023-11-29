@@ -1,0 +1,58 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+}
+#header {
+    background-color: #668f66;
+    height: 62px;
+    text-align: center;
+    padding-top: 4px;
+    color: red;
+}
+#content {
+    background-image: url("img/background-fireplace.jpg");
+    width: 1320px;
+    height: 858px;
+    float: right;
+}
+#nav {
+    background-color: #668f66;
+    height: 858px;
+    float: left;
+}
+.menu {
+    width: 260px;
+    height: 200px;
+    padding: 10px;
+    opacity: 60%;
+    color: white;
+    background-color: red;
+    margin-bottom: 20px;
+    font-size: 105%;
+
+}
+.licence {
+    margin-top: 598px;
+    text-align: center;
+    background-color: red;
+    opacity: 60%;
+    color: white;
+
+
+}
+#footer {
+    width: 1600px;
+    height: 2px;
+    background-color: aqua;
+    clear: both;
+}
+a {
+    color: white;
+}
+ol, ul, li {
+    list-style-type: none;
+}
