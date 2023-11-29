@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1350px;
+}
+header {
+    background-color: black;
+    color: orange;
+    text-align: center;
+    height: 80px;
+}
+#centerR {
+    background-color: yellow;
+    font-family: Arial;
+    float: right;
+    width: 950px;
+    height: 500px;
+    text-align: justify;
+    border: 1px black;
+    padding: 20px;
+}
+#centerL {
+    background-color: #808080FF;
+    font-size: 108%;
+    float: left;
+    padding: 30px;
+    height: 320px;
+    width: 400px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 130%;
+    clear: both;
+    height: 75px;
+
+}
+ul, li {
+    font-size: 108%;
+}
+a:hover {
+    text-decoration-line: underline ;
+}
+a:active {
+    color: pink;
+}

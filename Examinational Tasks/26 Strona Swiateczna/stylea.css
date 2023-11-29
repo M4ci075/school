@@ -1,19 +1,9 @@
 body {
-    background-color: forestgreen;
-    color: snow;
+    background-color: wheat;
+    color: black;
     font-family: Calibri;
 }
-#container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1900px;
-}
-#content {
-    width: 500px;
-    float: left;
-}
-#header {
-    text-align: center;
+header {
     margin: 30px;
     font-size: 120%;
 }
@@ -24,23 +14,17 @@ li {
 
 }
 fieldset {
-    background-color: whitesmoke;
-    width: 700px;
+    width: 500px;
     margin: 20px;
-    border: 3px solid;
-    color: black;
-    font-size: 120%;
+    border: 2px solid;
+    color: #777676;
 }
 section {
     width: 500px;
 }
 section h2 {
-
+    margin-left: 125px;
 }
 ol, ul {
     list-style-type: none;
 }
-.title {
-    margin-left: 220px;
-}
-
