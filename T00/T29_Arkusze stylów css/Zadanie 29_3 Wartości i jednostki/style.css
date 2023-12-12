@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: whitesmoke;
+}
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    width: 800px;
+    height: 600px;
+    background-color: #668f66;
+    border: 2px solid black
+}
+header {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    background-color: #9692B1;
+    height: 65px;
+}
+h1 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.5rem;
+}
+:root {
+    font-size: 14px;
+}
+.list {
+    margin: 20px;
+    font-size: 130%;
+}
+ul, ol, li {
+    list-style-type: none;
+}
