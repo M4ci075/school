@@ -1,0 +1,40 @@
+div {
+    border: red 5px;
+    text-align: center;
+    height: 50px ;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.obr1 {
+    border-style: dotted;
+}
+.obr2 {
+    border-style: dashed;
+}
+.obr3 {
+    border-style: solid;
+}
+.obr4 {
+    border-style: double;
+}
+.obr5 {
+    border-style: groove;
+}
+.obr6 {
+    border-style: ridge;
+}
+.obr7 {
+    border-style: inset;
+}
+.obr8 {
+    border-style: outset;
+}
+#content > div:nth-child(2n) {
+    background-color: #08ee0c
+}
+
+p {
+    margin-top: 15px;
+}
